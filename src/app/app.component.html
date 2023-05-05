@@ -1,0 +1,11 @@
+<h2>Ng-IF Example</h2>
+<input type="radio" name="rad" (click)="onchange(true)" checked/>True
+<input type="radio" name="rad" (click)="onchange(false)"/>False
+
+<div *ngIf="isValid">
+    Data is Valid
+</div>
+
+<div *ngIf="!isValid">
+    Data is not Valid
+</div>
