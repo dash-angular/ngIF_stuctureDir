@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-
-type NewType = boolean;
+import { MaxLengthValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -8,12 +7,9 @@ type NewType = boolean;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngIf';
-
-  isValid="true";
-
-  onchange(val:any)
-  {
-    this.isValid=val;
+  title = 'ngif';
+  gender="male";
+  onchange(val:any){
+   this.gender=val;
   }
 }
